@@ -353,34 +353,26 @@ CatanMap.prototype.generate = function() {
 				tileCoordinates = tileCoordinates.concat(tmpCoords);
 			} else {
 
-				//if(tileCoordinates.length === 1) {
-				//	newCoords = tileCoordinates.random(true);
-				//	newHexTile.setCoordinate.apply(
-				//		newHexTile,
-				//		newCoords
-				//	);
-				//} else {
-					invalid = true;
-					var tmpCoords = [];
-					while ( invalid && tileCoordinates.length > 0) {
-						newCoords = tileCoordinates.random(true);
-						newHexTile.setCoordinate.apply(
-							newHexTile,
-							newCoords
-						);
-						invalid = this.doesFormTriangle(newHexTile) || this.doesFormChain(newHexTile);
+                invalid = true;
+                var tmpCoords = [];
+                while ( invalid && tileCoordinates.length > 0) {
+                    newCoords = tileCoordinates.random(true);
+                    newHexTile.setCoordinate.apply(
+                        newHexTile,
+                        newCoords
+                    );
+                    invalid = this.doesFormTriangle(newHexTile) || this.doesFormChain(newHexTile) || this.hasSameNumberedNeighbour(newHexTile);
 
-						if(invalid && tileCoordinates.length == 0) {
+					if( invalid ) {
+						if( tileCoordinates.length === 0 ) {
 							console.log("gotcha! Try again!");
 							return true;
-						}
-
-						if (invalid && tileCoordinates.length >= 1) {
+						} else {
 							tmpCoords.push(newCoords);
 						}
 					}
-					tileCoordinates = tileCoordinates.concat(tmpCoords);
-				//}
+                }
+                tileCoordinates = tileCoordinates.concat(tmpCoords);
 			}
 			
 			this.hexTiles.push(newHexTile);
@@ -452,6 +444,16 @@ CatanMap.prototype.hasHighlyProductiveNeighbors = function(tile) {
 	return false;
 }
 
+CatanMap.prototype.hasSameNumberedNeighbour = function(tile) {
+	var adjacentTiles = this.getAdjacentTiles(tile);
+	for (var i = 0; i < adjacentTiles.length; i += 1) {
+		if ( tile.number === adjacentTiles[i].number ) {
+			return true;
+		}
+	}
+	return false;
+}
+
 CatanMap.prototype.doesFormTriangle = function(tile) {
 	var adjacentTiles = this.getAdjacentTiles(tile);
 	for (var i = 0; i < adjacentTiles.length; i += 1) {
@@ -472,8 +474,6 @@ CatanMap.prototype.doesFormChain = function(tile) {
 			count = count + 1;
 		}
 	}
-
-
 
 	if( count >= 2 ) {
 		console.log("tile: " + tile.number + ", " + tile.resourceType + " -> true");
