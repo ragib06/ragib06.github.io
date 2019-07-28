@@ -388,6 +388,10 @@ CatanMap.prototype.generate = function() {
 			}
 		} // end for loop
 
+		if(this.mapDefinition.coordinatesArray.length > 19) {
+			return false;
+		}
+
 		// make sure ore is not highly productive
 		if(highlyProductiveResources.indexOf('ore') != -1) {
 			return true;
