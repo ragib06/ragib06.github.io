@@ -242,6 +242,7 @@ function CatanMap() {
 	this.hexTiles = null;
 	this.coordToTile = {};
 	this.coordSpan = [0,0];
+	this.numbersToDots = {2: 1, 3: 2, 4: 3, 5: 4, 6: 5, 8:5, 9:4, 10: 3, 11: 2, 12: 1};
 	
 }
 CatanMap.prototype.defineMap = function(mapDefinition) {
@@ -328,6 +329,9 @@ CatanMap.prototype.generate = function() {
 			tileNumbers.swap(i,highlyProductiveIdx[i]);
 		}
 		
+		var maxOreDots = 0;
+		var highlyProductiveResources = [];
+
 		// Handle all other tiles
 		for (var i = 0; i < (numTiles - numDeserts); i += 1) {
 			
@@ -351,6 +355,7 @@ CatanMap.prototype.generate = function() {
 					}
 				} while ( invalid );
 				tileCoordinates = tileCoordinates.concat(tmpCoords);
+				highlyProductiveResources.push(newHexTile.resourceType);
 			} else {
 
                 invalid = true;
@@ -377,7 +382,28 @@ CatanMap.prototype.generate = function() {
 			
 			this.hexTiles.push(newHexTile);
 			this.coordToTile[newCoords.toString()] = newHexTile;
+
+			if(newHexTile.resourceType == "ore") {
+				maxOreDots = Math.max(maxOreDots, this.numbersToDots[newHexTile.number]);
+			}
 		} // end for loop
+
+		// make sure ore is not highly productive
+		if(highlyProductiveResources.indexOf('ore') != -1) {
+			return true;
+		}
+
+		// make sure highly productive tiles are evenly distributed
+		var highResourcesSet = new Set(highlyProductiveResources);
+		console.log(highResourcesSet.size === highlyProductiveResources.length);
+
+		if(highResourcesSet.size != highlyProductiveResources.length) {
+			return true;
+		}
+
+		if(maxOreDots > 3) {
+			return true;
+		}
 
 		return false;
 		
