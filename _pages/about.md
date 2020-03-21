@@ -12,4 +12,4 @@ I am a PhD student in the Department of Computer Science at the University of Il
 
 My most recent work involves building robust Learning-To-Rank systems that can recover from selection bias from user feedback. We proposed a method to overcome it using Heckman two step method which is a popular selection bias correction method in statistics. 
 
-I have completed my Bachelors in Computer Science at Bangladesh University of Engineering and Technology (BUET) in 2012. Prior to coming to UIC, I worked as a software company at Dhaka where I developed features for popular online social games. 
+I have completed my Bachelors in Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET) in 2012. Prior to coming to UIC, I worked as a software engineer at Disney Interactive, Dhaka where I developed features for popular online social games. 
