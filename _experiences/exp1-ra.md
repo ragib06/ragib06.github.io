@@ -1,5 +1,5 @@
 ---
-title: "Research Assistant"
+title: "Research Assistant @ UIC"
 collection: experiences
 start: May'17
 end: Present
