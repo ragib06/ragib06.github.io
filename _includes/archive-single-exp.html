@@ -18,9 +18,8 @@
     <h3 class="archive__item-title" itemprop="headline">
       {{ title }}
     </h3>
-    <p>Start date: {{ post.start }}</p>
-    <p>End date: {{ post.end }}</p>
-    <p>{{ post.description }}</p>
+    <p class="archive__item-excerpt" itemprop="description">{{ post.start }} - {{ post.end }}</p>
+    <p class="archive__item-excerpt" itemprop="description">{{ post.description }}</p>
     </li>
  </article>
 </div>
