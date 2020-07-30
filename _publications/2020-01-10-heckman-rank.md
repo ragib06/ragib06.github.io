@@ -1,5 +1,5 @@
 ---
-title: "Correcting for Selection Bias in Learning-to-rank Systems"
+title: "Correcting for Selection Bias in Learning-to-rank Systems (WWW 2020)"
 collection: publications
 date: 2020-01-10
 venue: 'WWW'

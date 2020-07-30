@@ -19,6 +19,7 @@ I have completed my Bachelors in 2012 at the department of Computer Science and 
 News
 ======
 
+- July'20: Our paper "Effectiveness of Sampling Strategies for One-shot Active Learning from Relational Data" got accepted in MLG'20.
 - January'20: Our paper "Correcting for selection bias in Learning-to-Rank systems" got accepted in WWW'20.
 - June'19: Started intership at Anthem Inc. for the summer.
 
