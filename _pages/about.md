@@ -19,10 +19,10 @@ I have completed my Bachelors in 2012 at the department of Computer Science and 
 News
 ======
 
-- January'22: Our ppaer titles "Relational Causal Models with Cycles: Representation and Reasoning" got accepted in CLeaR'22.
+- January'22: Our paper titled "Relational Causal Models with Cycles: Representation and Reasoning" got accepted at CLeaR'22.
 - May'21: I joined Pinterst Labs as a Summer intern! I'll be working with the Trust & Safety team to fight spam.
-- July'20: Our paper "Effectiveness of Sampling Strategies for One-shot Active Learning from Relational Data" got accepted in MLG'20.
-- January'20: Our paper "Correcting for selection bias in Learning-to-Rank systems" got accepted in WWW'20.
+- July'20: Our paper "Effectiveness of Sampling Strategies for One-shot Active Learning from Relational Data" got accepted at MLG'20.
+- January'20: Our paper "Correcting for selection bias in Learning-to-Rank systems" got accepted at WWW'20.
 - June'19: Started intership at Anthem Inc. for the summer.
 
 
