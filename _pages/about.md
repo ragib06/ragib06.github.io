@@ -19,6 +19,7 @@ I have completed my Bachelors in 2012 at the department of Computer Science and 
 News
 ======
 
+- May'22: Our paper titled "Non-Parametric Inference of Relational Dependence" got accepted at UAI'22.
 - January'22: Our paper titled "Relational Causal Models with Cycles: Representation and Reasoning" got accepted at CLeaR'22.
 - May'21: I joined Pinterst Labs as a Summer intern! I'll be working with the Trust & Safety team to fight spam.
 - July'20: Our paper "Effectiveness of Sampling Strategies for One-shot Active Learning from Relational Data" got accepted at MLG'20.
