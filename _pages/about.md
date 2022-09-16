@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student at the Department of Computer Science in University of Illinois at Chicago (UIC) working under the supervision of Professor [Elena Zheleva](https://www.cs.uic.edu/~elena/). I'm interested in developing machine learning and causal infernece models for relational data. My current research is focused on causal structure learning for relational data.
+I recently finished my PhD at the Department of Computer Science in University of Illinois at Chicago (UIC) working under the supervision of Professor [Elena Zheleva](https://www.cs.uic.edu/~elena/). I'm interested in developing machine learning and causal infernece models for relational data. My current research is focused on causal structure learning for relational data.
 
 My most recent work involves building robust Learning-To-Rank systems that can recover from selection bias from user feedback. We proposed a method to overcome it using Heckman two step method which is a popular selection bias correction method in statistics. 
 
@@ -19,6 +19,7 @@ I have completed my Bachelors in 2012 at the department of Computer Science and 
 News
 ======
 
+- September'22: I successfully defended my Ph.D. dissertation!
 - May'22: Our paper titled "Non-Parametric Inference of Relational Dependence" got accepted at UAI'22.
 - January'22: Our paper titled "Relational Causal Models with Cycles: Representation and Reasoning" got accepted at CLeaR'22.
 - May'21: I joined Pinterst Labs as a Summer intern! I'll be working with the Trust & Safety team to fight spam.
