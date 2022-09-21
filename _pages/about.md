@@ -8,11 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I recently finished my PhD at the Department of Computer Science in University of Illinois at Chicago (UIC) working under the supervision of Professor [Elena Zheleva](https://www.cs.uic.edu/~elena/). I'm interested in developing machine learning and causal infernece models for relational data. My current research is focused on causal structure learning for relational data.
+I recently finished my PhD at the Department of Computer Science in University of Illinois at Chicago (UIC) working under the supervision of Professor [Elena Zheleva](https://www.cs.uic.edu/~elena/) and looking forward to join [Pinterest Inc.](https://www.pinterest.com/) as a Machine Learning engineer. I'm interested in the application of machine learning and causal inference on relational data. My PhD research was focused on causal discovery from relational data in the presence of feedback loops.
 
-My most recent work involves building robust Learning-To-Rank systems that can recover from selection bias from user feedback. We proposed a method to overcome it using Heckman two step method which is a popular selection bias correction method in statistics. 
-
-I have completed my Bachelors in 2012 at the department of Computer Science and Engineering in Bangladesh University of Engineering and Technology (BUET). Prior to coming to UIC, I worked as a software engineer at Disney Interactive, Dhaka where I developed features for popular online social games. 
+In my previous life, I worked as a software engineer at Disney Interactive, Bangladesh where I developed features for popular online social games. Before that, I completed my Bachelors in Computer Science and Engineering at Bangladesh University of Engineering and Technology (BUET), 2012. 
 
 
 
