@@ -17,8 +17,8 @@ In my previous life, I worked as a software engineer at Disney Interactive, Bang
 News
 ======
 
-- September'22: I successfully defended my Ph.D. dissertation!
 - November'22: Our paper titled "Learning Relational Causal Models with Cycles through Relational Acyclification" got accepted at AAAI'23.
+- September'22: I successfully defended my Ph.D. dissertation!
 - May'22: Our paper titled "Non-Parametric Inference of Relational Dependence" got accepted at UAI'22.
 - January'22: Our paper titled "Relational Causal Models with Cycles: Representation and Reasoning" got accepted at CLeaR'22.
 - May'21: I joined Pinterst Labs as a Summer intern! I'll be working with the Trust & Safety team to fight spam.
